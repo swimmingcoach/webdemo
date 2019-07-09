@@ -13,4 +13,9 @@ public class TestController {
     public String test() {
         return HELLO;
     }
+
+    @PostMapping(value = "/test", params = "action=post")
+    public String post(@RequestParam String name) {
+        return HELLO + " " + name;
+    }
 }
