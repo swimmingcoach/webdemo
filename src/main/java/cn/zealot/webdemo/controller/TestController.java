@@ -12,9 +12,8 @@ public class TestController {
     private String HELLO;
 
     @GetMapping(value = "/test")
-    @ResponseBody
     public String test() {
-        return HELLO;
+        return "boo/test";
     }
 
     @PostMapping(value = "/test", params = "action=post")

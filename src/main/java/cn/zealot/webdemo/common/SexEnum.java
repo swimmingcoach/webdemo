@@ -8,7 +8,7 @@ public enum SexEnum {
     private Integer value;
     private String des;
 
-    private SexEnum(Integer value, String des) {
+    SexEnum(Integer value, String des) {
         this.value = value;
         this.des = des;
     }
